@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Fonts -->
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+    <!-- Chivo Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Tailwindcss -->
+    <link rel="stylesheet" href="dist/output.css">
+    <link rel="stylesheet" href="tailwind.config.scss">
+
+    <!-- Style -->
+    <style>
+        .instagram {
+            transition: .3s ease-in-out background;
+        }
+
+        .instagram:hover {
+            background: linear-gradient(-150deg, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+    <title>HIMTI</title>
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="wrap">
+        <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+            <div class="container">
+                <div class="flex items-center justify-between relative">
+                    <div class="px-4">
+                        <a href="#home" class="font-bold text-lg text-cyan-500 block py-6">
+                            <img src="img/logo.png" alt="" height="75" width="75">
+                        </a>
+                    </div>
+                    <div class="flex items-center px-4">
+                        <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden">
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                            <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                        </button>
+
+                        <nav id="nav-menu"
+                            class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+
+                            <ul class="block lg:flex">
+                                <li class="group">
+                                    <a href="#home"
+                                        class="text-base text-dark-9 py-2 mx-8 flex font-poppins font-semibold group-hover:text-slate-300 transition duration-150">Home</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#about"
+                                        class="text-base text-dark-9 py-2 mx-8 flex font-poppins font-semibold group-hover:text-slate-300 transition duration-150">Tentang
+                                        Kami</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#project"
+                                        class="text-base text-dark-9 py-2 mx-8 flex font-poppins font-semibold group-hover:text-slate-300 transition duration-150">Proyek
+                                        Kami</a>
+                                </li>
+                                <li class="group">
+                                    <a href="#contact"
+                                        class="text-base text-dark-9 py-2 mx-8 flex font-poppins font-semibold group-hover:text-slate-300 transition duration-150">Hubungi
+                                        Kami</a>
+                                </li>
+                            </ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <!-- End of Nav -->
+
+        <!-- Home -->
+
+        <section id="home" class="pt-48">
+            <div class="flex flex-col justify-center items-center w-full">
+                <h3 id="home-message" class="text-4xl md:text-6xl text-center text-semi-bold lg:w-1/2 text-himti"
+                    style="font-family: 'Chivo Mono', monospace">Selamat Datang di Website HIMTI.</h3>
+                <h6 class="pt-6 text-2xl text-himti" style="font-family: 'Chivo Mono', monospace;">Our Fanspage</h6>
+                <ul class="flex flex-row pt-6 justify-evenly w-full md:pt-12 ">
+                    <li class="px-8">
+                        <a href="" class="text-[36px] ease-in duration-150 text-himti hover:text-[#4267B2]"
+                            id="facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+                    </li>
+                    <li class="px-8">
+                        <a href="https://www.instagram.com/himti_ibmb/" class="instagram text-himti text-[36px]"
+                            id="instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="px-8">
+                        <a href="" class="text-[36px] text-himti hover:text-[#FF0000] ease-in duration-150">
+                            <i class="bi bi-youtube" id="youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </section>
+
+        <!-- End of Home -->
+
+        <!-- About -->
+
+        <section class="">
+            <img src="img/Vector.png" alt="">
+            <div class="bg-[#071530] pt-28 md:pt-16" id="about">
+                <div>
+                    <div class="about-title text-center">
+                        <h4 class="text-slate-100 text-5xl font-bold" style="font-family: 'Chivo Mono', monospace;">
+                            Himpunan
+                            Teknik
+                            Informatika IBMB</h4>
+                    </div>
+                    <div class="flex flex-col md:flex-row justify-around mt-[96px] gap-2">
+                        <div class="about-wrap px-4 py-16">
+                            <h4 class="text-2xl text-slate-100 text-center md:text-4xl font-semibold"
+                                style="font-family: 'Chivo Mono', monospace;">
+                                Tentang HIMTI</h4>
+                            <p class="text-slate-100 mt-12 px-3 md:text-lg text-base"
+                                style="font-family: 'Poppins', sans-serif;">
+                                HIMTI atau Himpunan Mahasiswa Teknik Informatika adalah organisasi yang mewadahi seluruh
+                                kegiatan mahasiswa Teknik Informatika di Institut Bisnis Muhammadiyah untuk
+                                mengembangkan potensi dan kemampuan mahasiswa dalam bidang Teknik Informatika. Himpunan
+                                ini bertujuan agar terbinanya insan akademis., intelektualitas, yang menguasai ilmu
+                                pengetahuan teknologi informatika serta beriman kepada Tuhan Yang Maha Esa .HIMTI
+                                dibentuk oleh Ahmad Taufiqurrahman pada tanggal 5 september 2019 di Kota Bekasi. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="py-28 md:py-36 md:flex" id="about-visi">
+
+                    <div class="wrapper md:w-1/2">
+                        <div class="" id="about-visi-judul">
+                            <h4 class="text-slate-100 text-2xl text-center md:text-4xl font-semibold"
+                                style="font-family: 'Chivo Mono', monospace;">
+                                Visi HIMTI</h4>
+                        </div>
+                        <div class="text-slate-100 md:text-xl text-base text-center px-3 flex items-center h-full pt-7 md:pt-0"
+                            id="about-visi-visi" style="font-family: 'Poppins', sans-serif;">
+                            <p class="text-base md:text-lg">Menjadikan HIMTI IBM Bekasi sebagai Himpunan Mahasiswa yang
+                                dikenal dunia
+                                pada tahun 2045
+                                dengan
+                                teknologinya.</p>
+                        </div>
+
+                    </div>
+
+                    <div class="wrapper flex-row md:w-1/2 pt-20 md:pt-0">
+                        <div class="text-center">
+                            <img src="img/edra.png" alt="edra" class="block mx-auto"
+                                style="height: 400px; width:300px;">
+                        </div>
+                        <div id="about-ketua" class="text-center pt-16">
+                            <h6 class="text-slate-100" style="font-family: 'Poppins', sans-serif;">Muhammad Edra Favian
+                            </h6>
+                            <p class="text-slate-100" style="font-family: 'Poppins', sans-serif;">Ketua HIMTI 2021 -
+                                2022
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="py-28 md:py-36 flex flex-col md:flex-row-reverse" id="about-misi">
+
+                    <div class="wrapper md:w-1/2">
+                        <div class="" id="about-misi-judul">
+                            <h4 class="text-slate-100 text-2xl text-center md:text-4xl font-semibold"
+                                style="font-family: 'Chivo Mono', monospace;">
+                                Misi HIMTI</h4>
+                        </div>
+                        <div class="text-slate-100 md:text-xl text-base text-center px-3 flex items-center h-full pt-7"
+                            id="about-misi-misi" style="font-family: 'Poppins', sans-serif;">
+                            <ul class="list-disc text-base text-left">
+                                <li class="text-slate-100 mt-12 px-3 md:text-lg text-base">Memperkuat ikatan antar
+                                    sesama
+                                    anggota keluarga HIMTI dengan pengetahuan, pengalaman,
+                                    dan nilai-nilai baik dalam membentuk satu keluarga HIMTI yang solid.</li>
+                                <li class="text-slate-100 mt-12 px-3 md:text-lg text-base">Mengembangkan sikap
+                                    profesional
+                                    dalam setiap individu di dalam HIMTI, agar siap
+                                    menghadapi duni industri, karir dan pengembangan lingkungan global. Khususnya dalam
+                                    bidang teknologi dan informasi.</li>
+                                <li class="text-slate-100 mt-12 px-3 md:text-lg text-base">Menjunjung tinggi rasa
+                                    nasionalisme, menunjukkan bahwa HIMTI berbakti pada Indonesia.
+                                </li>
+                                <li class="text-slate-100 mt-12 px-3 md:text-lg text-base">Mengembangkan skill setiap
+                                    anggota keluarga HIMTI dalam bidang teknologi di dunia yang
+                                    berkembang pesat</li>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="wrapper flex-row md:w-1/2">
+                        <div class="text-center">
+                            <img src="img/ezi.png" alt="ezi" class="block mx-auto">
+                        </div>
+                        <div id="about-ketua" class="text-center pt-16">
+                            <h6 class="text-slate-100" style="font-family: 'Poppins', sans-serif;">Fahrezi Rizqiawan
+                            </h6>
+                            <p class="text-slate-100" style="font-family: 'Poppins', sans-serif;">Ketua HIMTI 2022 -
+                                2023
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <img src="img/Vector2.png" alt="">
+        </section>
+
+        <!-- End of About Us -->
+
+        <!-- Project -->
+
+        <section class="pt-[92px]" id="project">
+
+            <h4 class="text-dark-9 text-4xl text-center md:text-6xl font-bold uppercase"
+                style="font-family: 'Chivo Mono', monospace;">
+                Proyek Kami</h4>
+
+            <div class="flex flex-col md:flex-row py-28 px-5">
+                <div
+                    class="w-full p-0 lg:w-1/2 xl:w-1/3 md:m-6 my-4 overflow-hidden shadow-lg rounded-xl border bg-slate-200">
+                    <img src="img/pic2.jpg" alt="" class="w-full">
+                    <div class="p-3">
+                        <h4 class="pt-6 text-2xl font-poppins">Project 1</h4>
+                        <p class="pt-6 font-poppins">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+                            obcaecati
+                            atque labore, natus non
+                            sunt officiis illum. Doloremque tempora dicta autem. Iste voluptatibus, laboriosam sunt
+                            sequi
+                            dolorum quae impedit temporibus!</p>
+                        <a href="#"
+                            class="block p-3 my-3 text-center bg-[#071530] text-slate-100 rounded-xl transition duration-150 hover:bg-slate-100 hover:text-[#071530] hover:ring hover:ring-[#071530]">Baca
+                            Selengkapnya</a>
+                    </div>
+                </div>
+                <div
+                    class="w-full p-0 lg:w-1/2 xl:w-1/3 md:m-6 my-4 overflow-hidden shadow-lg rounded-xl border bg-slate-200">
+                    <img src="img/pic1.gif" alt="" class="w-full">
+                    <div class="p-3">
+                        <h4 class="pt-6 text-2xl font-poppins">Project 2</h4>
+                        <p class="pt-6 font-poppins">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+                            obcaecati
+                            atque labore, natus non
+                            sunt officiis illum. Doloremque tempora dicta autem. Iste voluptatibus, laboriosam sunt
+                            sequi
+                            dolorum quae impedit temporibus!</p>
+                        <a href="#"
+                            class="block p-3 my-3 text-center bg-[#071530] text-slate-100 rounded-xl transition duration-150 hover:bg-slate-100 hover:text-[#071530] hover:ring hover:ring-[#071530]">Baca
+                            Selengkapnya</a>
+                    </div>
+                </div>
+                <div
+                    class="w-full p-0 lg:w-1/2 xl:w-1/3 md:m-6 my-4 overflow-hidden shadow-lg rounded-xl border bg-slate-200">
+                    <img src="img/pic3.jpg" alt="" class="w-full">
+                    <div class="p-3">
+                        <h4 class="pt-6 text-2xl font-poppins">Project 3</h4>
+                        <p class="pt-6 font-poppins">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident
+                            obcaecati
+                            atque labore, natus non
+                            sunt officiis illum. Doloremque tempora dicta autem. Iste voluptatibus, laboriosam sunt
+                            sequi
+                            dolorum quae impedit temporibus!</p>
+                        <a href="#"
+                            class="block p-3 my-3 text-center bg-[#071530] text-slate-100 rounded-xl transition duration-150 hover:bg-slate-100 hover:text-[#071530] hover:ring hover:ring-[#071530]">Baca
+                            Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- End of Project -->
+
+        <!-- Contact Us -->
+
+        <section id="contact" class="w-5/6 mx-auto shadow-lg p-6">
+            <h4 class="text-[#071530] text-4xl md:text-6xl font-bold uppercase text-center my-10"
+                style="font-family: 'Chivo Mono', monospace;">Contact Us</h4>
+            <form action="">
+                <div class="form-wrap flex flex-col mx-auto">
+
+                    <label for="email"
+                        class="my-2 block font-semibold after:content-['*'] after:text-pink-500 after:ml-[3px]">Email</label>
+                    <input type="email" id="email" name="email"
+                        class="my-2 px-3 py-2 rounded block text-sm shadow-md placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#071530] invalid:ring-pink-700 invalid:focus:ring-pink-700 invalid:border-pink-700 invalid:placeholder:text-pink-700"
+                        placeholder="masukkan email...">
+
+                    <label for="subject" class="my-2 block font-semibold">Subject</label>
+                    <input type="text" id="subject" name="subject" placeholder="masukkan judul anda..."
+                        class="my-2 px-3 py-2 rounded block text-sm shadow-md placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#071530]">
+
+                    <label for="desc" class="my-2 block font-semibold">Description</label>
+                    <textarea id="desc" name="desc" placeholder="tuliskan keinginan anda untuk kami.."
+                        class="my-2 px-3 py-2 rounded block text-sm shadow-md placeholder:text-slate-500 focus:outline-none focus:ring-1 focus:ring-[#071530]"></textarea>
+
+                    <input type="submit" value="KIRIM"
+                        class="my-2 bg-[#071530] text-slate-100 p-4 cursor-pointer rounded-xl hover:text-[#071530] hover:bg-slate-100 hover:ring-blue-500">
+
+                </div>
+            </form>
+        </section>
+
+
+        <section id="footer"></section>
+        <!-- End of Contact Us -->
+    </div>
+
+    <!-- Go Top -->
+
+    <div class="go-top-wrapper fixed bottom-16 right-7 hover:bottom-20 transition-1 duration-150">
+        <div class="go-top w-fit rounded-full shadow-lg p-3 bg-slate-100">
+            <a href="#home">
+                <i class="bi bi-arrow-up text-3xl"></i>
+            </a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <section id="footer" class="pt-10">
+        <div class="footer">
+            <div class="footer-1 bg-[#071530] flex flex-col md:flex-row justify-between items-center">
+                <div class="footer-maps overflow-hidden p-5 md:w-1/2">
+                    <div class="mapouter">
+                        <div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no"
+                                marginheight="0" marginwidth="0"
+                                src="https://maps.google.com/maps?width=400&amp;height=250&amp;hl=en&amp;q=IBM bekasi kampus 2&amp;t=&amp;z=16&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                                href="https://www.gachacute.com/">Download</a></div>
+                        <style>
+                            .mapouter {
+                                position: relative;
+                                text-align: right;
+                                width: 100%;
+                                height: 250px;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                width: 100%;
+                                height: 250px;
+                            }
+
+                            .gmap_iframe {
+                                height: 250px !important;
+                            }
+                        </style>
+                    </div>
+                </div>
+                <div class="footer-tribute p-5 text-center md:w-1/2">
+                    <p class="text-slate-100 text-lg">This website is tribute for</p>
+                    <img src="img/logo-2.png" width="250" class="block mx-auto">
+                </div>
+            </div>
+            <div class="footer-2 bg-[#1F2C44] flex flex-col md:flex-row md:justify-between items-center text-slate-100">
+                <div class="footer-cp py-3 px-10"><span>&copy;</span>Copyright 2022 HIMTI IBMB. All Right Reserved</div>
+                <div class="footer-creator py-3 px-10">Made with <i class="bi bi-heart-fill text-pink-500"></i> by <a
+                        href="#">EX4CT</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="tailwind.config.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
